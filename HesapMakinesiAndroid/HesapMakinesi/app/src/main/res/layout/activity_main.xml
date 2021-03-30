@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/sonucGoster"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/light_gray"
+        android:ems="10"
+        android:gravity="right"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="50dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="0dp"
+        android:text="0"
+        android:textColor="@color/gray"
+        android:textSize="60dp" />
+
+    <TextView
+        android:id="@+id/sonucTotalGoster"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/light_gray"
+        android:gravity="right"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:text="0"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <Button
+                android:id="@+id/btnAC"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="buttonACClick"
+                android:text="AC"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/white" />
+
+            <Button
+                android:id="@+id/btnbos1"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:clickable="false"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                app:backgroundTint="@color/white" />
+
+            <Button
+                android:id="@+id/btnbos2"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                app:backgroundTint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/btnBolu"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@color/backgroundOperator"
+                android:cropToPadding="true"
+                android:onClick="buttonOperatorClick"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/bolu" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="buttonNumberClick"
+                android:text="7"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                app:backgroundTint="@color/white" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="buttonNumberClick"
+                android:text="8"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                app:backgroundTint="@color/white" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="buttonNumberClick"
+                android:text="9"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                app:backgroundTint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/btnCarpi"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@color/backgroundOperator"
+                android:cropToPadding="true"
+                android:onClick="buttonOperatorClick"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/carpi" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="buttonNumberClick"
+                android:text="4"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                app:backgroundTint="@color/white" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="buttonNumberClick"
+                android:text="5"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                app:backgroundTint="@color/white" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="buttonNumberClick"
+                android:text="6"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                app:backgroundTint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/btnEksi"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@color/backgroundOperator"
+                android:cropToPadding="true"
+                android:onClick="buttonOperatorClick"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/eksi" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="buttonNumberClick"
+                android:text="1"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                app:backgroundTint="@color/white" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="buttonNumberClick"
+                android:text="2"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                app:backgroundTint="@color/white" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="buttonNumberClick"
+                android:text="3"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                app:backgroundTint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/btnToplam"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@color/backgroundOperator"
+                android:cropToPadding="true"
+                android:onClick="buttonOperatorClick"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/arti" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="buttonNumberClick"
+                android:text="0"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                app:backgroundTint="@color/white" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:clickable="false"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                app:backgroundTint="@color/white" />
+
+            <Button
+                android:id="@+id/btnnokta"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="."
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
+                app:backgroundTint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/btnEsittir"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@color/backgroundOperator"
+                android:cropToPadding="true"
+                android:onClick="buttonEsittirClick"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/esittir" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
